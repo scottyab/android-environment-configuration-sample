@@ -1,0 +1,8 @@
+
+-encryptassetfiles assets/config.properties
+
+-encryptstrings class com.scottyab.configexample.AssetPropertyManager
+
+-accessthroughreflection class com.scottyab.configexample.AssetPropertyManager {
+  java.lang.String *();
+}

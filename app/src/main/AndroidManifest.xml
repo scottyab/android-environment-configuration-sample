@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.scottyab.configexample" >
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- needed for hockeyapp -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name=".MyApp"
         android:allowBackup="false"
@@ -16,6 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <!-- Crashlytics key same for all build types -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fd9791dea2b9bd8823a33ec0b2703f01eca142e9" />
+
     </application>
 
 </manifest>

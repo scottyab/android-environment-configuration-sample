@@ -15,3 +15,36 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+
+-keepattributes SourceFile,LineNumberTable,*Annotation*
+
+#crashlytics Config
+-keep class com.crashlytics.** { *; }
+-dontwarn com.crashlytics.**
+
+#For Fabric to properly de-obfuscate your crash reports, you need to remove this line from your ProGuard config:
+#-printmapping mapping.txt
+
+
+#Hockey app config
+-keep public class javax.net.ssl.**
+-keepclassmembers public class javax.net.ssl.** {
+  *;
+}
+
+-keep public class org.apache.http.**
+-keepclassmembers public class org.apache.http.** {
+  *;
+}
+
+-keepclassmembers class net.hockeyapp.android.UpdateFragment {
+  *;
+}
+
+
+#crittercism config
+-keep public class com.crittercism.**
+-keepclassmembers public class com.crittercism.* {
+    *;
+}

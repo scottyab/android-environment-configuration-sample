@@ -10,7 +10,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/configEntriesContainer"
         android:orientation="vertical">
 
         <TextView
@@ -57,6 +58,32 @@
             android:layout_height="wrap_content"
             android:text="Not found"/>
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/crashButtonsContainer"
+        android:layout_below="@+id/configEntriesContainer"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/handledCrashButton"
+            android:text="Handled Crash"
+            android:onClick="handledCrash"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/crashButton"
+            android:text="Crash"
+            android:onClick="crash"
+            />
 
     </LinearLayout>
 

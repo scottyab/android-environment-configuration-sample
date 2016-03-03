@@ -1,9 +1,8 @@
 Android Environment configuration sample
 ========================================
 
-This is the sample project that accompanies the "Managing your app’s configuration" blog post that illustrates a convincent way of extracting your environment configuration into a `.properties`
+This is the sample project that accompanies the ["Managing and securing your app’s configuration"](https://www.guardsquare.com/managing-and-securing-your-app%E2%80%99s-configuration) blog post that illustrates a convincent way of extracting your environment configuration into a `.properties`
 file.
-
 
 
 ##Building
